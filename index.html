@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Green Gains – TradingView Indicator Suite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* (All styling stays the same — unchanged from earlier version) */
+    :root {
+      --bg: #05060a;
+      --bg-alt: #0e1018;
+      --card: #141824;
+      --accent: #31d47b;
+      --accent-soft: rgba(49, 212, 123, 0.12);
+      --text-main: #f7f7ff;
+      --text-muted: #a5aec6;
+      --border: #242838;
+      --danger: #ff4e5a;
+      --warning: #ffc857;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:system-ui;background:#05060a;color:var(--text-main);line-height:1.6;}
+    a{text-decoration:none;color:inherit;}
+    .page{max-width:1100px;margin:0 auto;padding:24px 16px 80px;}
+    header{display:flex;justify-content:space-between;margin-bottom:32px;align-items:center;}
+    nav{display:flex;gap:18px;color:var(--text-muted);}
+    nav a:hover{color:var(--accent);}
+    .logo{display:flex;align-items:center;gap:8px;font-weight:700;text-transform:uppercase;font-size:14px;}
+    .logo-mark{background:#31d47b;color:#000;width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;}
+    .hero{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;margin-bottom:48px;align-items:center;}
+    .btn{padding:10px 20px;border-radius:999px;font-weight:600;border:1px solid transparent;cursor:pointer;}
+    .btn-primary{background:linear-gradient(135deg,#10d56a,#1bbf80);color:#000;}
+    .btn-ghost{border:1px solid var(--border);color:var(--text-muted);}
+    .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+    .hero-title{font-size:34px;font-weight:700;}
+    .hero-sub{color:var(--text-muted);margin-bottom:16px;}
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <div class="logo-mark">G</div> Green Gains
+      </div>
+      <nav>
+        <a href="#product">Product</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how">How it works</a>
+        <a href="#testimonials">Testimonials</a>
+      </nav>
+    </header>
+
+    <!-- HERO UPDATED WITH NASDAQ COPY -->
+    <section class="hero" id="top">
+      <div>
+        <div class="hero-highlight" style="color:#31d47b;margin-bottom:12px;">
+          Optimized for NASDAQ Swing Traders
+        </div>
+
+        <h1 class="hero-title">Swing trade the NASDAQ with confidence.</h1>
+
+        <p class="hero-sub">
+          Green Gains PRO Suite analyzes weekly trend direction and 4H market structure across high-volatility NASDAQ tickers such as <strong>TSLA, NVDA, META, AMD, AMZN and MSFT</strong>.
+          A clean bias engine filters noise so you only enter <strong>high-probability swing setups</strong>.
+        </p>
+
+        <div style="display:flex;gap:10px;margin-bottom:12px;">
+          <a class="btn btn-primary" href="#">Buy Green Gains PRO – PayPal</a>
+          <a class="btn btn-ghost" href="#pricing">See Free vs PRO</a>
+        </div>
+
+        <div style="font-size:13px;color:var(--text-muted);">
+          Delivered as an invite-only TradingView script. Instant access after approval.
+        </div>
+      </div>
+
+      <!-- Indicator Preview Card -->
+      <div style="background:#141824;padding:16px;border-radius:16px;border:1px solid var(--border);">
+        <h3 style="font-size:14px;color:var(--text-muted);margin-bottom:8px;">Green Gains – Dashboard Preview (TSLA 4H)</h3>
+        <p style="font-size:13px;color:var(--accent);margin-bottom:8px;">
+          Bias: Strong Bullish · Entry Quality: ★★★★☆
+        </p>
+        <ul style="font-size:13px;color:var(--text-muted);line-height:1.4;">
+          <li>✔ Weekly + 4H bias alignment</li>
+          <li>✔ Accurate NASDAQ swing signals</li>
+          <li>✔ Buy zone shading on chart</li>
+          <li>✔ Momentum + EMA retest confirmation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION UPDATED WITH NASDAQ TEXT -->
+    <section id="product" style="margin-bottom:40px;">
+      <h2 style="font-size:20px;margin-bottom:12px;">Perfect for NASDAQ swing traders</h2>
+      <p style="color:var(--text-muted);margin-bottom:20px;">
+        Build consistency by aligning high-timeframe direction (Weekly) with your execution timeframe (4H).
+        Green Gains reads structure, volatility and momentum for you — perfect for fast-moving NASDAQ names.
+      </p>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" style="margin-top:40px;margin-bottom:40px;">
+      <h2 style="font-size:20px;margin-bottom:12px;">What traders are saying</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:18px;">
+
+        <div style="background:#0e1018;border:1px solid #242838;padding:16px;border-radius:12px;">
+          <p style="font-size:14px;color:#a5aec6;">
+            “The bias dashboard changed my entire process. I don’t chase anymore — I wait for the star setups.
+            My NASDAQ swings are cleaner and more structured.”
+          </p>
+          <div style="margin-top:8px;font-size:13px;color:#31d47b;">— Daniel M.</div>
+        </div>
+
+        <div style="background:#0e1018;border:1px solid #242838;padding:16px;border-radius:12px;">
+          <p style="font-size:14px;color:#a5aec6;">
+            “I used to scalp randomly. Now I swing TSLA and NVDA with an actual system.
+            The 4H bias + weekly trend combo is stupidly accurate.”
+          </p>
+          <div style="margin-top:8px;font-size:13px;color:#31d47b;">— Sarah L.</div>
+        </div>
+
+        <div style="background:#0e1018;border:1px solid #242838;padding:16px;border-radius:12px;">
+          <p style="font-size:14px;color:#a5aec6;">
+            “Green Gains gave me confidence. If the bias is green, I trade.
+            If it’s neutral or red, I chill. My win rate is way more consistent.”
+          </p>
+          <div style="margin-top:8px;font-size:13px;color:#31d47b;">— Kevin R.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOW TO ADD TO TRADINGVIEW -->
+    <section id="how" style="margin-top:40px;margin-bottom:40px;">
+      <h2 style="font-size:20px;margin-bottom:12px;">How to add Green Gains to TradingView</h2>
+      <p style="color:var(--text-muted);margin-bottom:20px;">
+        Green Gains runs entirely inside TradingView. No downloads, no extra software.
+      </p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;">
+
+        <div style="background:#0e1018;border:1px solid #242838;padding:16px;border-radius:12px;">
+          <div style="font-size:20px;color:var(--accent);">①</div>
+          <strong style="color:white;">Open your TradingView account</strong>
+          <p style="margin-top:6px;color:var(--text-muted);">
+            Log in or create a free account.
+          </p>
+        </div>
+
+        <div style="background:#0e1018;border:1px solid #242838;padding:16px;border-radius:12px;">
+          <div style="font-size:20px;color:var(--accent);">②</div>
+          <strong style="color:white;">Go to “Invite-only scripts”</strong>
+          <p style="margin-top:6px;color:var(--text-muted);">
+            Open Indicators → scroll down to the “Invite-only” section.
+          </p>
+        </div>
+
+        <div style="background:#0e1018;border:1px solid #242838;padding:16px;border-radius:12px;">
+          <div style="font-size:20px;color:var(--accent);">③</div>
+          <strong style="color:white;">Find “Green Gains – PRO Suite”</strong>
+          <p style="margin-top:6px;color:var(--text-muted);">
+            Once approved, the indicator appears there automatically.
+          </p>
+        </div>
+
+        <div style="background:#0e1018;border:1px solid #242838;padding:16px;border-radius:12px;">
+          <div style="font-size:20px;color:var(--accent);">④</div>
+          <strong style="color:white;">Add to chart and begin trading</strong>
+          <p style="margin-top:6px;color:var(--text-muted);">
+            The dashboard, bias system and entry engine will load instantly.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" style="margin-top:40px;margin-bottom:40px;">
+      <h2 style="font-size:20px;margin-bottom:12px;">Free vs PRO</h2>
+      <p style="color:var(--text-muted);margin-bottom:20px;">
+        Start with the free weekly dashboard, upgrade to PRO for full 4H swing trading power.
+      </p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;">
+
+        <!-- FREE VERSION -->
+        <div style="background:#0e1018;border:1px solid #242838;padding:20px;border-radius:16px;">
+          <div style="font-size:13px;color:var(--text-muted);margin-bottom:6px;">Free</div>
+          <h3 style="color:white;font-size:16px;">Green Gains – Weekly Dashboard</h3>
+          <div style="font-size:20px;margin:8px 0;">$0 <span style="font-size:12px;color:var(--text-muted);">forever</span></div>
+          <ul style="font-size:14px;color:var(--text-muted);line-height:1.4;margin:10px 0 14px;">
+            <li>✔ Weekly trend & bias</li>
+            <li>✔ Trend strength %</li>
+            <li>✔ Volume and volatility readout</li>
+            <li>✖ No 4H bias</li>
+            <li>✖ No entry zones</li>
+            <li>✖ No star rating</li>
+          </ul>
+          <a href="#" class="btn btn-ghost">Get Free Version</a>
+        </div>
+
+        <!-- PRO VERSION -->
+        <div style="background:#141824;border:1px solid var(--accent);padding:20px;border-radius:16px;box-shadow:0 0 18px rgba(49,212,123,0.25);">
+          <div style="font-size:13px;color:var(--accent);margin-bottom:6px;">Most Popular</div>
+          <h3 style="color:white;font-size:16px;">Green Gains – PRO Suite</h3>
+          <div style="font-size:20px;margin:8px 0;">$XX <span style="font-size:12px;color:var(--text-muted);">/ month</span></div>
+
+          <ul style="font-size:14px;color:var(--text-muted);line-height:1.4;margin:10px 0 14px;">
+            <li>✔ Full Weekly + 4H bias engine</li>
+            <li>✔ Buy zones & EMA retests</li>
+            <li>✔ Star rating (0–5)</li>
+            <li>✔ Alerts for zones, momentum & reversals</li>
+            <li>✔ NASDAQ Swing Optimization</li>
+            <li>✔ Private Discord group (optional)</li>
+          </ul>
+
+          <!-- PayPal Link Placeholder -->
+          <a href="#" class="btn btn-primary" target="_blank">
+            Checkout with PayPal
+          </a>
+
+          <p style="margin-top:8px;font-size:12px;color:var(--text-muted);">
+            After checkout, provide your TradingView username for access.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="border-top:1px solid #242838;padding-top:16px;margin-top:30px;font-size:12px;color:var(--text-muted);display:flex;justify-content:space-between;flex-wrap:wrap;">
+      <div>
+        © <span id="year"></span> Green Gains. All rights reserved.
+      </div>
+      <div>
+        <a href="#" target="_blank">Discord</a> ·
+        <a href="#" target="_blank">TradingView</a> ·
+        <a href="mailto:youremail@example.com">Contact</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
