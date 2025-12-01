@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Green Gains – TradingView Indicator Suite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* (All styling stays the same — unchanged from earlier version) */
+    :root {
+      --bg: #05060a;
+      --bg-alt: #0e1018;
+      --card: #141824;
+      --accent: #31d47b;
+      --accent-soft: rgba(49, 212, 123, 0.12);
+      --text-main: #f7f7ff;
+      --text-muted: #a5aec6;
+      --border: #242838;
+      --danger: #ff4e5a;
+      --warning: #ffc857;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:system-ui;background:#05060a;color:var(--text-main);line-height:1.6;}
+    a{text-decoration:none;color:inherit;}
+    .page{max-width:1100px;margin:0 auto;padding:24px 16px 80px;}
+    header{display:flex;justify-content:space-between;margin-bottom:32px;align-items:center;}
+    nav{display:flex;gap:18px;color:var(--text-muted);}
+    nav a:hover{color:var(--accent);}
+    .logo{display:flex;align-items:center;gap:8px;font-weight:700;text-transform:uppercase;font-size:14px;}
+    .logo-mark{background:#31d47b;color:#000;width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;}
+    .hero{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;margin-bottom:48px;align-items:center;}
+    .btn{padding:10px 20px;border-radius:999px;font-weight:600;border:1px solid transparent;cursor:pointer;}
+    .btn-primary{background:linear-gradient(135deg,#10d56a,#1bbf80);color:#000;}
+    .btn-ghost{border:1px solid var(--border);color:var(--text-muted);}
+    .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+    .hero-title{font-size:34px;font-weight:700;}
+    .hero-sub{color:var(--text-muted);margin-bottom:16px;}
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <div class="logo-mark">G</div> Green Gains
+      </div>
+      <nav>
+        <a href="#product">Product</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how">How it works</a>
+        <a href="#testimonials">Testimonials</a>
+      </nav>
+    </header>
+
+    <!-- HERO UPDATED WITH NASDAQ COPY -->
+    <section class="hero" id="top">
+      <div>
+        <div class="hero-highlight" style="color:#31d47b;margin-bottom:12px;">
+          Optimized for NASDAQ Swing Traders
+        </div>
+
+        <h1 class="hero-title">Swing trade the NASDAQ with confidence.</h1>
+
+        <p class="hero-sub">
+          Green Gains PRO Suite analyzes weekly trend direction and 4H market structure across high-volatility NASDAQ tickers such as <strong>TSLA, NVDA, META, AMD, AMZN and MSFT</strong>.
+          A clean bias engine filters noise so you only enter <strong>high-probability swing setups</strong>.
+        </p>
+
+        <div style="display:flex;gap:10px;margin-bottom:12px;">
+          <a class="btn btn-primary" href="#">Buy Green Gains PRO – PayPal</a>
+          <a class="btn btn-ghost" href="#pricing">See Free vs PRO</a>
+        </div>
+
+        <div style="font-size:13px;color:var(--text-muted);">
+          Delivered as an invite-only TradingView script. Instant access after approval.
+        </div>
+      </div>
+
+      <!-- Indicator Preview Card -->
+      <div style="background:#141824;padding:16px;border-radius:16px;border:1px solid var(--border);">
+        <h3 style="font-size:14px;color:var(--text-muted);margin-bottom:8px;">Green Gains – Dashboard Preview (TSLA 4H)</h3>
+        <p style="font-size:13px;color:var(--accent);margin-bottom:8px;">
+          Bias: Strong Bullish · Entry Quality: ★★★★☆
+        </p>
+        <ul style="font-size:13px;color:var(--text-muted);line-height:1.4;">
+          <li>✔ Weekly + 4H bias alignment</li>
+          <li>✔ Accurate NASDAQ swing signals</li>
+          <li>✔ Buy zone shading on chart</li>
+          <li>✔ Momentum + EMA retest confirmation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION UPDATED WITH NASDAQ TEXT -->
+    <section id="product" style="margin-bottom:40px;">
+      <h2 style="font-size:20px;margin-bottom:12px;">Perfect for NASDAQ swing traders</h2>
+      <p style="color:var(--text-muted);margin-bottom:20px;">
+        Build consistency by aligning high-timeframe direction (Weekly) with your execution timeframe (4H).
+        Green Gains reads structure, volatility and momentum for you — perfect for fast-moving NASDAQ names.
+      </p>
+    </section>
